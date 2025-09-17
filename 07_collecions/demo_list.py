@@ -1,4 +1,4 @@
-
+#           0       1        2
 fruta = ["Pera", "Maçã", "Banana"]
 print(fruta)
 
@@ -71,3 +71,46 @@ print(nomes[0])
 
 nomes.insert(0, "Joana") # add um valor na pos indicada
 print(nomes[0])
+
+
+print("-----remover elm de listas------")
+
+# remover elm de listas
+
+print(nomes[-1])
+
+nomes.pop() # remove o ultimo elm
+
+print(nomes[-1])
+print("-"*4)
+
+print(nomes[4])
+nomes.pop(4) # se indicar o idx remove o idx
+print(nomes[4])
+
+print("-"*4)
+
+nomes.append("Marta")
+nomes.append("Marta")
+nomes.append("Marta")
+nomes.append("Marta")
+
+print(nomes.count("Marta"))
+# nomes.remove("Marta") # -> remover a 1 vez que o valor aparecer
+print(nomes.count("Marta"))
+
+
+while nomes.count("Marta"):
+    print("antes de remover", end=" | ")
+    print(nomes.count("Marta"), end=" | ")
+    nomes.remove("Marta")
+    print("depois de remover", end=" | ")
+    print(nomes.count("Marta"))
+
+print(nomes.count("Marta"))
+
+# iterar por listas
+
+for n in nomes:
+    print(n, end=" | ")
+
