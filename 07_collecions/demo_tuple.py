@@ -76,3 +76,38 @@ print(my_tuple.index("pwd 2"))
 print("-" * 3)
 
 print(my_tuple[-1])
+
+
+print("# mudar o um valor dentro de um tuplo ?")
+
+my_tuple = ("usr 2", "pwd 2", "token 2")
+
+# mudar o um valor dentro de um tuplo ?
+
+# 1 - converter para lista
+lista_temp = list(my_tuple)
+
+# 2 - mudar o valor
+lista_temp[0] = "cool username"
+
+# 3 - converter para tuplo
+
+my_tuple = tuple(lista_temp)
+
+print(my_tuple)
+
+
+# adicinar um valor dentro de um tuplo ?
+
+# 1 - converter para lista
+lista_temp = list(my_tuple)
+
+# 2 - adicionar o valor
+
+lista_temp.append("Novo valor")
+
+# 3 - converter para tuplo
+
+my_tuple = tuple(lista_temp)
+
+print(my_tuple)
