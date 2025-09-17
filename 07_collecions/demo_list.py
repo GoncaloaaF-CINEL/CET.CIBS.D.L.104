@@ -57,3 +57,17 @@ print(nomes[20:-1: 2])
 nomes[20:-1: 2] = ["novo nome 1", "novo nome 2"]
 
 print(nomes[20:-1: 2])
+
+
+print("--"*10)
+
+print(nomes[-1])
+
+nomes.append("Maria") # add um valor no final
+print(nomes[-1])
+
+print("--"*10)
+print(nomes[0])
+
+nomes.insert(0, "Joana") # add um valor na pos indicada
+print(nomes[0])
