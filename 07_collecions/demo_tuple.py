@@ -70,3 +70,9 @@ print(my_tuple.index("usr 2")) # o 1º idx onde aparece o valor indicado
 print(my_tuple.index("pwd 2"))
 
 # print(my_tuple.index("outro valor")) # se não existe -> ValueError: tuple.index(x): x not in tuple
+
+
+
+print("-" * 3)
+
+print(my_tuple[-1])
